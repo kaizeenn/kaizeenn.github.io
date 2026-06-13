@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaizen — Software Developer</title>
+  <meta name="description" content="Mahasiswa Teknik Informatika — Software Developer, problem solver, OSS contributor.">
+  <meta property="og:title" content="Kaizen — Software Developer">
+  <meta property="og:description" content="Portfolio, blog, dan CV seorang mahasiswa Teknik Informatika.">
+  <meta name="theme-color" content="#050508">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor" id="cursor"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav-logo">KZN<span class="accent">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#blog">blog</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-sm">Hire Me</a>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-grid-bg"></div>
+      <div class="hero-content">
+        <div class="hero-label"><span class="dot-green"></span> available for opportunities</div>
+        <h1 class="hero-name">Kaizen<span class="accent">.</span></h1>
+        <div class="hero-role">
+          <span class="typing-wrap"><span class="typing" id="typing"></span><span class="t-cursor">_</span></span>
+        </div>
+        <p class="hero-desc">Mahasiswa Teknik Informatika yang fokus membangun solusi digital efektif &amp; efisien. Aktif berkontribusi ke proyek open source.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">6+</span><span class="stat-label">OSS PRs</span></div>
+          <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Repos</span></div>
+          <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Learning</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="terminal-title">~/portfolio — zsh</span>
+          </div>
+          <div class="terminal-body">
+            <div class="t-line"><span class="t-prompt">❯</span> whoami</div>
+            <div class="t-line t-out">kaizeenn</div>
+            <div class="t-line"><span class="t-prompt">❯</span> cat about.txt</div>
+            <div class="t-line t-out">Software Developer · TI Student</div>
+            <div class="t-line t-out">Problem Solver · OSS Contributor</div>
+            <div class="t-line"><span class="t-prompt">❯</span> git log --oneline -4</div>
+            <div class="t-line t-green">a3f7c12 fix: IBAN MOD-97 validation</div>
+            <div class="t-line t-green">9e2b041 feat: German Tax ID detector</div>
+            <div class="t-line t-green">c4d8f93 fix: Polars delta format</div>
+            <div class="t-line t-green">ee6ea34 fix: self-ref forward quote</div>
+            <div class="t-line"><span class="t-prompt">❯</span> <span class="blink-block">▋</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-eyebrow">// 01. about</div>
+        <h2 class="section-title">Tentang Saya</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>Saya adalah mahasiswa <strong>Teknik Informatika</strong> dengan minat mendalam dalam pengembangan perangkat lunak dan teknologi modern. Fokus saya adalah membangun solusi digital yang efektif dan efisien, didukung kemampuan <em>problem solving</em> yang terstruktur.</p>
+            <p>Saya aktif mempelajari teknologi terbaru dan mengembangkan keterampilan melalui kontribusi nyata ke proyek open source — dari <strong>kedro-org</strong> hingga <strong>koxudaxi/datamodel-code-generator</strong> (⭐3930).</p>
+            <p>Berusaha memberikan hasil terbaik dalam setiap pekerjaan, baik secara individual maupun dalam tim.</p>
+          </div>
+          <div class="about-card">
+            <div class="info-row"><span class="info-key">status</span><span class="info-val status-active">available</span></div>
+            <div class="info-row"><span class="info-key">jurusan</span><span class="info-val">Teknik Informatika</span></div>
+            <div class="info-row"><span class="info-key">fokus</span><span class="info-val">Software Dev</span></div>
+            <div class="info-row"><span class="info-key">github</span><span class="info-val"><a href="https://github.com/kaizeenn" target="_blank" rel="noopener">@kaizeenn ↗</a></span></div>
+            <div class="info-row"><span class="info-key">lokasi</span><span class="info-val">Indonesia</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <div class="section-eyebrow">// 02. skills</div>
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="skills-grid">
+          <div class="skill-block">
+            <h3 class="skill-heading">Languages</h3>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">TypeScript</span>
+              <span class="tag">Java</span><span class="tag">C/C++</span><span class="tag">SQL</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <h3 class="skill-heading">Web &amp; Frameworks</h3>
+            <div class="tags">
+              <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Next.js</span>
+              <span class="tag">Express</span><span class="tag">HTML/CSS</span><span class="tag">REST API</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <h3 class="skill-heading">Tools &amp; DevOps</h3>
+            <div class="tags">
+              <span class="tag">Git</span><span class="tag">Docker</span><span class="tag">Linux</span>
+              <span class="tag">PostgreSQL</span><span class="tag">GitHub Actions</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <h3 class="skill-heading">Learning</h3>
+            <div class="tags">
+              <span class="tag dim">Rust</span><span class="tag dim">Go</span>
+              <span class="tag dim">Kubernetes</span><span class="tag dim">ML/AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="section-eyebrow">// 03. projects</div>
+        <h2 class="section-title">Open Source Contributions</h2>
+        <div class="projects-grid">
+
+          <article class="card">
+            <div class="card-header">
+              <span class="card-repo">koxudaxi/datamodel-code-generator</span>
+              <span class="card-stars">⭐ 3.9k</span>
+            </div>
+            <h3 class="card-title">Self-Reference Forward Quote Fix</h3>
+            <p class="card-desc">Fixed self-referencing fields not being quoted when <code>--disable-future-imports</code> is used, causing Ruff F821 on Python &lt; 3.14.</p>
+            <div class="card-tags"><span>Python</span><span>AST</span><span>Pydantic</span></div>
+            <a href="https://github.com/koxudaxi/datamodel-code-generator/pull/3387" target="_blank" rel="noopener" class="card-link">View PR ↗</a>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <span class="card-repo">kedro-org/kedro-plugins</span>
+              <span class="card-stars">⭐ 1.2k</span>
+            </div>
+            <h3 class="card-title">Polars Delta Format Support</h3>
+            <p class="card-desc">Fixed <code>EagerPolarsDataset</code> crash with <code>file_format: delta</code> by routing delta reads/writes directly instead of via BytesIO buffer.</p>
+            <div class="card-tags"><span>Python</span><span>Polars</span><span>Delta Lake</span></div>
+            <a href="https://github.com/kedro-org/kedro-plugins/pull/1425" target="_blank" rel="noopener" class="card-link">View PR ↗</a>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <span class="card-repo">github-community-projects/issue-metrics</span>
+              <span class="card-stars">⭐ 530</span>
+            </div>
+            <h3 class="card-title">Discussion Mentor Counting Fix</h3>
+            <p class="card-desc">Repaired three layered bugs making <code>enable_mentor_count</code> a complete no-op for GitHub Discussions — GraphQL query, dict access, and self-reference guard.</p>
+            <div class="card-tags"><span>Python</span><span>GraphQL</span><span>GitHub API</span></div>
+            <a href="https://github.com/github-community-projects/issue-metrics/pull/776" target="_blank" rel="noopener" class="card-link">View PR ↗</a>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <span class="card-repo">LennardGeissler/ai-compliance-copilot</span>
+              <span class="card-stars">⭐ OSS</span>
+            </div>
+            <h3 class="card-title">IBAN MOD-97 Validation</h3>
+            <p class="card-desc">Added full ISO 13616 MOD-97 checksum validation to IBAN detection rule with country-length table and 4 new tests.</p>
+            <div class="card-tags"><span>TypeScript</span><span>ISO 13616</span><span>Security</span></div>
+            <a href="https://github.com/LennardGeissler/ai-compliance-copilot/pull/78" target="_blank" rel="noopener" class="card-link">View PR ↗</a>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <span class="card-repo">LennardGeissler/ai-compliance-copilot</span>
+              <span class="card-stars">⭐ OSS</span>
+            </div>
+            <h3 class="card-title">German Tax ID Detector</h3>
+            <p class="card-desc">New <code>tax_id</code> category with ISO 7064 MOD 11,10 check digit validator, i18n for en/de/es/fr, redaction label, and 6 tests.</p>
+            <div class="card-tags"><span>TypeScript</span><span>ISO 7064</span><span>i18n</span></div>
+            <a href="https://github.com/LennardGeissler/ai-compliance-copilot/pull/79" target="_blank" rel="noopener" class="card-link">View PR ↗</a>
+          </article>
+
+          <article class="card card-personal">
+            <div class="card-header">
+              <span class="card-repo">personal project</span>
+              <span class="card-stars">WIP</span>
+            </div>
+            <h3 class="card-title">More Coming Soon</h3>
+            <p class="card-desc">Sedang mengerjakan beberapa proyek personal. Stay tuned di GitHub untuk update terbaru.</p>
+            <div class="card-tags"><span>???</span></div>
+            <a href="https://github.com/kaizeenn" target="_blank" rel="noopener" class="card-link">GitHub ↗</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="section blog">
+      <div class="container">
+        <div class="section-eyebrow">// 04. blog</div>
+        <h2 class="section-title">Writing</h2>
+        <div class="blog-grid">
+          <article class="blog-card">
+            <span class="blog-date">Jun 2025</span>
+            <h3 class="blog-title">Cara Berkontribusi ke Open Source sebagai Mahasiswa</h3>
+            <p class="blog-excerpt">Pengalaman saya melakukan 6+ PR ke repo terkemuka — mulai dari menemukan bug yang nyata hingga menulis tes yang benar.</p>
+            <span class="blog-tag">open source</span>
+          </article>
+          <article class="blog-card">
+            <span class="blog-date">Mei 2025</span>
+            <h3 class="blog-title">Memahami Forward References di Python</h3>
+            <p class="blog-excerpt">Deep dive ke PEP 563, PEP 649, dan kenapa <code>from __future__ import annotations</code> penting untuk type safety.</p>
+            <span class="blog-tag">python</span>
+          </article>
+          <article class="blog-card">
+            <span class="blog-date">Apr 2025</span>
+            <h3 class="blog-title">Delta Lake + Polars: Pitfalls yang Perlu Diketahui</h3>
+            <p class="blog-excerpt">BytesIO vs path-based I/O dan mengapa format delta butuh penanganan khusus di Kedro Datasets.</p>
+            <span class="blog-tag">data engineering</span>
+          </article>
+        </div>
+        <p class="blog-note">Blog posts coming soon — untuk sekarang, follow progress di <a href="https://github.com/kaizeenn" target="_blank" rel="noopener">GitHub ↗</a></p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container contact-inner">
+        <div class="section-eyebrow">// 05. contact</div>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-desc">Terbuka untuk peluang kolaborasi, proyek, internship, atau sekadar diskusi teknologi.</p>
+        <div class="social-links">
+          <a href="https://github.com/kaizeenn" target="_blank" rel="noopener" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/kaizeenn" target="_blank" rel="noopener" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:hi@kaizeenn.dev" class="social-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </a>
+        </div>
+        <a href="#" class="btn btn-primary btn-lg">Download CV</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">KZN<span class="accent">.</span></span>
+      <span class="footer-copy">© 2025 Kaizen · Built with passion, deployed on GitHub Pages</span>
+      <a href="https://github.com/kaizeenn/kaizeenn.github.io" target="_blank" rel="noopener" class="footer-src">source ↗</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
